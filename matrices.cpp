@@ -44,7 +44,7 @@ int main(){
     
     float Nx= 10;
     float variacion = 10;
-    float Nxmax = 1000;
+    float Nxmax = 22;
     int canti = Nxmax/variacion;
     float *iteraciones = new float[canti];
     float *nxs =  new float[canti];
@@ -74,11 +74,11 @@ int main(){
                 }
             }
 
-            if(am < pow(10, -6)){
+            if(am < 10e-6){
                 valor = false;
             }
             else{
-                pasost += 500;
+                pasost += 50;
             }
 
             delete[] psin;

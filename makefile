@@ -1,6 +1,6 @@
 iteraciones.png : iteraciones.txt matrices.py
 	python matrices.py
-	rm iteraciones.txt 
+	rm iteraciones.txt nx.txt
 iteraciones.txt : matrices.x
 	./matrices.x
 	rm matrices.x
